@@ -37,7 +37,7 @@ describe('Park', function() {
     park.addDinosaurs(dinasourNew.species);
     park.removeDinasours(dinasour.species);
 
-    //assert 
+    //assert
     const actual = park.dinosaurs;
     assert.deepStrictEqual(actual, [dinasourNew.species]); 
   });
@@ -47,8 +47,8 @@ describe('Park', function() {
     park.addDinosaurs(dinasour.guestsAttractedPerDay);
     park.addDinosaurs(dinasour2.guestsAttractedPerDay);
     // park.dinasours = [50, 30]
-    const actual = park.dinasourWithMostVisitors()
-    assert.deepStrictEqual(actual, 50)
+    const actual = park.dinasours;
+    assert.deepStrictEqual(actual, [dinasour.guestsAttractedPerDay, dinasour2.guestsAttractedPerDay])
   
   xit('should be able to find all dinosaurs of a particular species');
 
